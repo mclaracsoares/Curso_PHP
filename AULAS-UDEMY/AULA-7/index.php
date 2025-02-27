@@ -1,22 +1,79 @@
 <?php
 
-// arrays
+// estruturas de controle
 
-$teste = array(); // pode ser assim
-$teste_2 = [1, 2, 3];
+// operadores
 
-// echo $teste_2 -> vai dar erro
-echo $teste_2[0]; // tem que falar a posicao do elemento que se deseja imprimir
+$a = 1;
+$b = 2;
 
-$teste_3 = ['o', 'l', 'a', 1, 2, 3, 4, TRUE];
-print_r($teste_3); // função para imprimir o array inteiro sem precisar de laços de repetição
-// ele irá imprimir literalmente tudo, incluindo as posicoes e falando o que tem em cada posicao
-var_dump($teste_3);
-// ele vai fazer o mesmo do print_r, mas irá falar qual é o tipo de cada variavel do array
-$teste_4 = ["chave_1" => "claroca", "chave_2" => "linda" ];
-// chave vai servir como literalmente uma chave para a palavra claroca
+// if
 
-echo $teste_4["chave_1"];
-// ele irá imprimir "claroca"
+if ($a == $b) { // compara se sao iguais
+    $a = 1; // representativo
+    }
 
-echo "A " .$teste_4["chave_1"] ." é muito ". $teste_4["chave_2"];
+elseif ($a === $b) { // compara se sao iguais ou do mesmo tipo (int, float...)
+    $a = 1;
+ }
+
+ else {
+    $a = 0;
+ }
+
+// diferente
+// modo 1
+$a <> $b;
+
+// modo 2
+$b != $a;
+
+$a !== $b; // se sao diferentes ou nao sao do mesmo tipo
+
+// maior que
+$b > $a;
+
+// maior ou igual
+$b >= $a;
+
+// menor
+$b < $a;
+
+// menor ou igual
+$b <= $a;
+
+// incrmento
+// modo 1
+$a++;
+
+// modo 2
+++$a;
+
+// modo 3
+$a = $a +1;
+
+// modulo
+$a % $b; // retorna o resto
+
+// operadores logicos
+
+// e 
+// modo 1
+$a and $b;
+
+// modo 2
+$a && $b;
+
+// ou
+// modo 1
+$a or $b;
+
+// modo 2
+$a || $b;
+
+// nao
+!$a;
+
+// XOR - verdadeiros se a ou b verdadeiros, mas nao ambos (quando ambos sao, da falso)
+$a xor $b;
+

@@ -1,13 +1,15 @@
 <?php
 
+// operadores 
 
-// tipos de dados basicos
+$num_1 = 1;
+$num_2 = 2;
 
-$exmplo_inteiro = 100;
-$exemplo_string = "100";
-$exemplo_string2 = '100';
-$exemplo_float = 3.14;
+$resultado = ($num_1 + $num_2);
 
-$exemplo_booleanTrue = TRUE;
-$exemplo_booleanFalse = FALSE;
+// adicao +
+echo "a adição de $num_1 por $num_2 é igual a $resultado";
 
+// subtracao -
+// multiplicacao *
+// divisao /
